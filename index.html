@@ -26,12 +26,12 @@ Select ONE Additional Feature to Add
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite tv show?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">suits</option>
+          <option value="movie2">how to get away with murder</option>
+          <option value="movie3">Lincoln lawyer</option>
+          <option value="movie4">The rookie</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
@@ -43,10 +43,10 @@ Select ONE Additional Feature to Add
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">The Inheritence games</option>
+          <option value="book2">The Hunger Games</option>
+          <option value="book3">Kindred</option>
+          <option value="book4">Allegidly</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -61,10 +61,10 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        if (answer === "movie2") {
+          $("#movie-result").text("Correct!");
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#movie-result").text("ermm terribly wrong bro-");
         }
       });
 
@@ -75,8 +75,8 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "book3") {
+          $("#book-result").text("Correct!");
         } else {
           $("#book-result").text("Try Again!");
         }
