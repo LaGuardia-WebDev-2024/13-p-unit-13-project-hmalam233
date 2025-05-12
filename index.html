@@ -21,7 +21,7 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1><strong>Quiz About [Me]</strong>
     <hr />
     <!-- Movie Question -->
     <form id="movie-form">
@@ -36,7 +36,12 @@ Select ONE Additional Feature to Add
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="movie-result">
+    <p id="suits">
+      
+      </p>
+      <img id="htgawm" width="100" height= "200">
+      </div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
@@ -62,9 +67,10 @@ Select ONE Additional Feature to Add
         var answer = $answer.val();
 
         if (answer === "movie2") {
-          $("#movie-result").text("Correct!");
+          $("#suits").text("Correct!");
+          $("#htgawm").attr("src","https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh_Bsh1uP1r0LNDvrfGedFWZo78J0fSlkao9Frj8x4QreYyaKrtlse6iST8J8Jwa2Xx2oMwQ")
         } else {
-          $("#movie-result").text("ermm terribly wrong bro-");
+          $("#suits").text("ermm terribly wrong bro-");
         }
       });
 
@@ -78,9 +84,13 @@ Select ONE Additional Feature to Add
         if (answer === "book3") {
           $("#book-result").text("Correct!");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#book-result").text("Your not trying are you..");
         }
       });
+      
+       
+    
+      
     </script>
   </body>
 
