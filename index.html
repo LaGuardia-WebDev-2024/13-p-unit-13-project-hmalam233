@@ -1,15 +1,15 @@
 <!-- Unit 13 Project
 Requirements
-[  ] Two Interactive Drop-down Inputs 
+[ yes ] Two Interactive Drop-down Inputs 
 [  ] Two Different jQuery Animation Methods 
 [  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] Include Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Google Font
 [ no ] Feature 2 - Upload a Font
 [ no ] Feature 3 - .mouseover() Method
-[ no ] Feature 4 - :hover Feature 
+[ yes ] Feature 4 - :hover Feature 
 [ no ] Feature 5 - Add an Additional Interactive Drop-down
 -->
 
@@ -21,32 +21,53 @@ Select ONE Additional Feature to Add
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Quiz About [Me]</h1>
+    <h1>Quiz About [Me]
+      
+      
+      
     <hr />
+      
+    <style> 
+      
+      h1:hover {
+        background-color: rgb(43, 114, 152 );
+        color: white
+      }
+      
+      </style>
     <!-- Movie Question -->
     <form id="movie-form">
       <label>
-        🎥 What is my favorite movie?
+        🎥 What is my favorite tv show?
         <select id="movie-answer">
-          <option value="movie1">movie 1</option>
-          <option value="movie2">movie 2</option>
-          <option value="movie3">movie 3</option>
-          <option value="movie4">movie 4</option>
+          <option value="movie1">suits</option>
+          <option value="movie2">how to get away with murder</option>
+          <option value="movie3">Lincoln lawyer</option>
+          <option value="movie4">The rookie</option>
         </select>
       </label>
       <button type="submit">Check Movie Answer</button>
     </form>
-    <div id="movie-result"></div>
+    <div id="movie-result">
+    <p id="suits">
+      
+      </p>
+    
+        
+   <img src= https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/800px-Heart_coraz%C3%B3n.svg.png width="150">
+  <img src= https://png.pngtree.com/png-vector/20190223/ourmid/pngtree-star-vector-icon-png-image_696411.jpg
+      <img id="htgawm" width="100" height= "200">
+      </div>
     <hr />
     <!-- Book Question -->
     <form id="book-form">
       <label>
         📖 What is my favorite book?
         <select id="book-answer">
-          <option value="book1">book 1</option>
-          <option value="book2">book 2</option>
-          <option value="book3">book 3</option>
-          <option value="book4">book 4</option>
+          <option value="book1">The Inheritence games</option>
+          <option value="book2">The Hunger Games</option>
+          <option value="book3">Kindred</option>
+          <option value="book4">Allegidly</option>
         </select>
       </label>
       <button type="submit">Check Book Answer</button>
@@ -61,10 +82,11 @@ Select ONE Additional Feature to Add
         var $answer = $("#movie-answer");
         var answer = $answer.val();
 
-        if (answer === "movie1") {
-          $("#movie-result").text("YESSSS!");
+        if (answer === "movie2") {
+          $("#suits").text("Correct!");
+          $("#htgawm").attr("src","https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTh_Bsh1uP1r0LNDvrfGedFWZo78J0fSlkao9Frj8x4QreYyaKrtlse6iST8J8Jwa2Xx2oMwQ")
         } else {
-          $("#movie-result").text("Try Again!");
+          $("#suits").text("ermm terribly wrong bro-");
         }
       });
 
@@ -75,12 +97,16 @@ Select ONE Additional Feature to Add
         var $answer = $("#book-answer");
         var answer = $answer.val();
 
-        if (answer === "book1") {
-          $("#book-result").text("YESSSS!");
+        if (answer === "book3") {
+          $("#book-result").text("Correct!");
         } else {
-          $("#book-result").text("Try Again!");
+          $("#book-result").text("Your not trying are you..");
         }
       });
+      
+       
+ 
+      
     </script>
   </body>
 
